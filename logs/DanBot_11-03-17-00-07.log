@@ -1,0 +1,33 @@
+WARNING - 11/03/2017 00:07:13| PyNaCl is not installed, voice will NOT be supported
+INFO - 11/03/2017 00:07:13| on_ready has successfully been registered as an event
+INFO - 11/03/2017 00:07:13| on_message has successfully been registered as an event
+INFO - 11/03/2017 00:07:13| logging in using static token
+INFO - 11/03/2017 00:07:13| Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+INFO - 11/03/2017 00:07:13| sent the identify payload to create the websocket
+INFO - 11/03/2017 00:07:15| ---------------
+INFO - 11/03/2017 00:07:15| DanBot Initialized.
+INFO - 11/03/2017 00:07:15| User: DanBot
+INFO - 11/03/2017 00:07:15| Id: 375519136891011072
+INFO - 11/03/2017 00:07:15| ---------------
+WARNING - 11/03/2017 00:07:34| PyNaCl is not installed, voice will NOT be supported
+INFO - 11/03/2017 00:07:34| on_ready has successfully been registered as an event
+INFO - 11/03/2017 00:07:34| on_message has successfully been registered as an event
+INFO - 11/03/2017 00:07:34| logging in using static token
+INFO - 11/03/2017 00:07:35| Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+INFO - 11/03/2017 00:07:35| sent the identify payload to create the websocket
+INFO - 11/03/2017 00:07:37| ---------------
+INFO - 11/03/2017 00:07:37| DanBot Initialized.
+INFO - 11/03/2017 00:07:37| User: DanBot
+INFO - 11/03/2017 00:07:37| Id: 375519136891011072
+INFO - 11/03/2017 00:07:37| ---------------
+WARNING - 11/03/2017 00:07:57| PyNaCl is not installed, voice will NOT be supported
+INFO - 11/03/2017 00:07:57| on_ready has successfully been registered as an event
+INFO - 11/03/2017 00:07:57| on_message has successfully been registered as an event
+INFO - 11/03/2017 00:07:57| logging in using static token
+INFO - 11/03/2017 00:07:58| Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+INFO - 11/03/2017 00:07:58| sent the identify payload to create the websocket
+INFO - 11/03/2017 00:08:00| ---------------
+INFO - 11/03/2017 00:08:00| DanBot Initialized.
+INFO - 11/03/2017 00:08:00| User: DanBot
+INFO - 11/03/2017 00:08:00| Id: 375519136891011072
+INFO - 11/03/2017 00:08:00| ---------------

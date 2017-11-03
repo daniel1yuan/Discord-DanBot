@@ -1,0 +1,22 @@
+WARNING - 11/03/2017 00:03:02| PyNaCl is not installed, voice will NOT be supported
+INFO - 11/03/2017 00:03:02| on_ready has successfully been registered as an event
+INFO - 11/03/2017 00:03:02| on_message has successfully been registered as an event
+INFO - 11/03/2017 00:03:02| logging in using static token
+INFO - 11/03/2017 00:03:02| Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+INFO - 11/03/2017 00:03:02| sent the identify payload to create the websocket
+INFO - 11/03/2017 00:03:04| ---------------
+INFO - 11/03/2017 00:03:04| DanBot Initialized.
+INFO - 11/03/2017 00:03:04| User: DanBot
+INFO - 11/03/2017 00:03:04| Id: 375519136891011072
+INFO - 11/03/2017 00:03:04| ---------------
+WARNING - 11/03/2017 00:03:42| PyNaCl is not installed, voice will NOT be supported
+INFO - 11/03/2017 00:03:42| on_ready has successfully been registered as an event
+INFO - 11/03/2017 00:03:42| on_message has successfully been registered as an event
+INFO - 11/03/2017 00:03:42| logging in using static token
+INFO - 11/03/2017 00:03:42| Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+INFO - 11/03/2017 00:03:42| sent the identify payload to create the websocket
+INFO - 11/03/2017 00:03:45| ---------------
+INFO - 11/03/2017 00:03:45| DanBot Initialized.
+INFO - 11/03/2017 00:03:45| User: DanBot
+INFO - 11/03/2017 00:03:45| Id: 375519136891011072
+INFO - 11/03/2017 00:03:45| ---------------

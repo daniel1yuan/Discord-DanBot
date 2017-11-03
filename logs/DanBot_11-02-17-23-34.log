@@ -1,0 +1,11 @@
+WARNING - 11/02/2017 23:34:45| PyNaCl is not installed, voice will NOT be supported
+INFO - 11/02/2017 23:34:45| on_ready has successfully been registered as an event
+INFO - 11/02/2017 23:34:45| on_message has successfully been registered as an event
+INFO - 11/02/2017 23:34:45| logging in using static token
+INFO - 11/02/2017 23:34:45| Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+INFO - 11/02/2017 23:34:45| sent the identify payload to create the websocket
+INFO - 11/02/2017 23:34:47| ---------------
+INFO - 11/02/2017 23:34:47| DanBot Initialized.
+INFO - 11/02/2017 23:34:47| User: DanBot
+INFO - 11/02/2017 23:34:47| Id: 375519136891011072
+INFO - 11/02/2017 23:34:47| ---------------

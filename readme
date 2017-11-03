@@ -1,0 +1,11 @@
+Setup User and server Iam
+- Group
+- User
+- Role
+
+Enable SSM for server and user
+http://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-access.html#sysman-access-user
+
+Launch EC2 machine and start server
+
+Configure discord server

@@ -1,0 +1,37 @@
+WARNING - 11/02/2017 23:42:09| PyNaCl is not installed, voice will NOT be supported
+INFO - 11/02/2017 23:42:09| on_ready has successfully been registered as an event
+INFO - 11/02/2017 23:42:09| on_message has successfully been registered as an event
+INFO - 11/02/2017 23:42:09| logging in using static token
+INFO - 11/02/2017 23:42:10| Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+INFO - 11/02/2017 23:42:10| sent the identify payload to create the websocket
+INFO - 11/02/2017 23:42:12| ---------------
+INFO - 11/02/2017 23:42:12| DanBot Initialized.
+INFO - 11/02/2017 23:42:12| User: DanBot
+INFO - 11/02/2017 23:42:12| Id: 375519136891011072
+INFO - 11/02/2017 23:42:12| ---------------
+INFO - 11/02/2017 23:42:14| Recieved Message:!help
+INFO - 11/02/2017 23:42:19| Recieved Message:!listservers
+WARNING - 11/02/2017 23:42:35| PyNaCl is not installed, voice will NOT be supported
+INFO - 11/02/2017 23:42:35| on_ready has successfully been registered as an event
+INFO - 11/02/2017 23:42:35| on_message has successfully been registered as an event
+INFO - 11/02/2017 23:42:35| logging in using static token
+INFO - 11/02/2017 23:42:36| Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+INFO - 11/02/2017 23:42:36| sent the identify payload to create the websocket
+INFO - 11/02/2017 23:42:38| ---------------
+INFO - 11/02/2017 23:42:38| DanBot Initialized.
+INFO - 11/02/2017 23:42:38| User: DanBot
+INFO - 11/02/2017 23:42:38| Id: 375519136891011072
+INFO - 11/02/2017 23:42:38| ---------------
+INFO - 11/02/2017 23:42:40| Recieved Message:!listserver
+WARNING - 11/02/2017 23:42:51| PyNaCl is not installed, voice will NOT be supported
+INFO - 11/02/2017 23:42:51| on_ready has successfully been registered as an event
+INFO - 11/02/2017 23:42:51| on_message has successfully been registered as an event
+INFO - 11/02/2017 23:42:51| logging in using static token
+INFO - 11/02/2017 23:42:52| Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+INFO - 11/02/2017 23:42:52| sent the identify payload to create the websocket
+INFO - 11/02/2017 23:42:54| ---------------
+INFO - 11/02/2017 23:42:54| DanBot Initialized.
+INFO - 11/02/2017 23:42:54| User: DanBot
+INFO - 11/02/2017 23:42:54| Id: 375519136891011072
+INFO - 11/02/2017 23:42:54| ---------------
+INFO - 11/02/2017 23:42:57| Recieved Message:!listserver
