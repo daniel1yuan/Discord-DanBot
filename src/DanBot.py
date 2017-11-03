@@ -31,6 +31,7 @@ def saveObj(obj, filename):
 class DanBot(object):
     def __init__(self, private_constants):
         token = private_constants['discord_bot_token']
+        self.allowedRole = private_constants['discord_allowed_role_name']
         self.ec2 = EC2(private_constants)
         client = discord.Client()
         self.client = client
@@ -48,9 +49,14 @@ class DanBot(object):
         @client.event
         async def on_message(message):
             content = message.content
+            member = message.author
+            roles = member.roles
             for key, cmd in self.command.items():
                 if content.startswith(key):
-                    await cmd.run(message.channel, content)
+                    if (self._isAllowed(roles)):
+                        await cmd.run(message.channel, content)
+                    else:
+                        await client.send_message(message.channel, 'Nice Try buddo! I don\'t have commands for your role')
 
         client.run(token)
 
@@ -59,6 +65,7 @@ class DanBot(object):
         serverObj = loadFile(SERVER_FILE)
 
         # Commands
+        commandHelp = CommandHelp(self.client)
         listServer = ListServer(self.client, serverObj)
         serverStatus = ServerStatus(self.client, serverObj)
         startServer = StartServer(self.client, serverObj)
@@ -68,3 +75,11 @@ class DanBot(object):
         self.command['!' + serverStatus.getId()] = serverStatus
         self.command['!' + startServer.getId()] = startServer
         self.command['!' + stopServer.getId()] = stopServer
+        self.command['!' + commandHelp.getId()] = commandHelp
+
+    # Given roles, check if the role is allowed
+    def _isAllowed(self, roles):
+        for role in roles:
+            if (role.name == self.allowedRole):
+                return True
+        return False

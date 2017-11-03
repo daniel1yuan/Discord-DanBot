@@ -40,5 +40,5 @@ class Server(object):
 
     # Calls save on the screen with server
     def save(self):
-        cmd = 'screen -S ' + self.name + ' -X stuff \'save-all\'$(echo -ne \'\015\')'
+        cmd = "screen -S " + self.name + " -p 0 -X stuff 'save-all\n'"
         ec2.sendCommand(self.instance, cmd)

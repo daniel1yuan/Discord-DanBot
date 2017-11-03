@@ -43,6 +43,7 @@ def setup():
     private_constants['aws_secret_access_key'] = input('aws_secret_access_key: ')
     private_constants['aws_region'] = input('AWS Region: ')
     private_constants['discord_bot_token'] = input('Discord Bot Token: ')
+    private_constants['discord_allowed_role_name'] = input('Allowed Role name for bot: ')
 
     # Save Constants to ENV file
     saveObj(private_constants, ENV_FILE)

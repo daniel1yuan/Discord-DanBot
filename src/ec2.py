@@ -4,6 +4,7 @@
 
 # External Modules
 import boto3
+import logging as log
 
 class EC2(object):
     def __init__(self, private_constants):
@@ -15,10 +16,12 @@ class EC2(object):
         self.ssm = boto3.client('ssm', aws_access_key_id=self.aws_access_key_id, aws_secret_access_key=self.aws_secret_access_key, region_name=self.region)
 
     def startInstance(self, instanceId):
+        log.info("Starting instance: " + instanceId)
         instance = self.ec2.Instance(instanceId)
         instance.start()
 
     def stopInstance(self, instanceId):
+        log.info("Stopping instance: " + instanceId)
         state,_ = self.getInstanceState(instanceId)
         instance = self.ec2.Instance(instanceId)
         instance.stop()
@@ -33,5 +36,6 @@ class EC2(object):
         return state['Code'], state['Name']
 
     def sendCommand(self, instance, command):
+        log.info("Running: " + command + "on instance")
         return self.ssm.send_command(InstanceIds=[instance], DocumentName='AWS-RunShellScript', Comment='Running Command',
                                      Parameters={'commands': [command]})

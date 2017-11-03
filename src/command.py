@@ -27,11 +27,26 @@ class Command(object):
     def getId(self):
         return self.id
 
+class CommandHelp(Command):
+    def __init__(self, client):
+        Command.__init__(self, client)
+        self.help = None
+        self.id = 'help'
+        self.client = client
+        self.commands = [ListServer(None, None), ServerStatus(None, None), StartServer(None, None), StopServer(None, None)]
+
+    async def run(self, channel, message):
+        helpStr = ''
+        for command in self.commands:
+            helpStr += command.id + ': ' + command.getHelp() + '\n'
+        await self.client.send_message(channel, helpStr)
+
+
 # Command that lists all servers
 class ListServer(Command):
     def __init__(self, client, servers):
         Command.__init__(self, client)
-        self.help = 'List all Servers handled by DanBot'
+        self.help = 'List all Servers handled by DanBot with !list'
         self.id = 'list'
         self.servers = servers
 
@@ -43,7 +58,7 @@ class ListServer(Command):
 class ServerStatus(Command):
     def __init__(self, client, servers):
         Command.__init__(self, client)
-        self.help = 'List all Servers handled by DanBot'
+        self.help = 'Gets status of a server with !status <server>'
         self.id = 'status'
         self.servers = servers
 
@@ -65,7 +80,7 @@ class ServerStatus(Command):
 class StartServer(Command):
     def __init__(self, client, servers):
         Command.__init__(self, client)
-        self.help = 'List all Servers handled by DanBot'
+        self.help = 'Starts a server with !start <server>'
         self.id = 'start'
         self.servers = servers
 
@@ -85,7 +100,7 @@ class StartServer(Command):
 class StopServer(Command):
     def __init__(self, client, servers):
         Command.__init__(self, client)
-        self.help = 'List all Servers handled by DanBot'
+        self.help = 'Stops a server with !stop <server>'
         self.id = 'stop'
         self.servers = servers
 
@@ -101,3 +116,23 @@ class StopServer(Command):
                 await self.client.send_message(channel, 'Server Stopping.')
             else:
                 await self.client.send_message(channel, 'Server not found. Try using !list')
+
+# TODO: Implement Save
+# class SaveServer(Command):
+#     def __init__(self, client, servers):
+#         Command.__init__(self, client)
+#         self.help = 'Calls a save on a server with !save <server>'
+#         self.id = 'save'
+#         self.servers = servers
+
+#     async def run(self, channel, message):
+#         split_message = message.split()
+#         if (len(split_message) != 2):
+#             await self.client.send_message(channel, 'Invalid command format. Should be !status <server name>')
+#         else:
+#             server = split_message[1]
+#             if server in self.servers:
+#                 self.servers[server].save()
+#                 await self.client.send_message(channel, 'Server Saving.')
+#             else:
+#                 await self.client.send_message(channel, 'Server not found. Try using !list')
