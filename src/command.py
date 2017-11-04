@@ -72,8 +72,8 @@ class ServerStatus(Command):
                 instance = self.servers[server].getInstance()
                 ip = ec2.getIP(instance)
                 state = ec2.getInstanceState(instance)
-                await self.client.send_message(channel, 'Server ip: ' + ip +
-                                               '\nState: ' + state[1])
+                await self.client.send_message(channel, 'Server IP: ' + str(ip) +
+                                               '\nState: ' + str(state[1]))
             else:
                 await self.client.send_message(channel, 'Server not found. Try using !list')
 
