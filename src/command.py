@@ -93,7 +93,7 @@ class StartServer(Command):
             if server in self.servers:
                 instance = self.servers[server].getInstance()
                 ip = ec2.startInstance(instance)
-                await self.client.send_message(channel, 'Server Starting. \nIp: ' + ip)
+                await self.client.send_message(channel, 'Server Starting. \nIp: ' + str(ip))
             else:
                 await self.client.send_message(channel, 'Server not found. Try using !list')
 
